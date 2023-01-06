@@ -1,0 +1,262 @@
+/* Check out the navigation section. It's the most important part. */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+   background-color: black;
+   color:white
+}
+
+
+
+
+.motto {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 800px;
+}
+
+.services {
+
+  text-align: center;
+  margin: 60px auto;
+  max-width: 800px;
+  height:300px
+}
+
+
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+ 
+  align-items: center;
+  text-align: center;
+}
+
+
+ 
+footer {
+  background: whitesmoke;
+  color: white;
+  text-align: center;
+  padding: 60px;
+}
+.rows{
+  display:flex;
+  justify-content: space-between;
+}
+#vids {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+#vids a:first-of-type {
+  margin-bottom: 5px;
+}
+
+/**
+* Navigation
+*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  transition: all ease 0.6s;
+  z-index: 100;
+  width: 100%;
+  color:white
+}
+
+span {
+  font-size: 28px;
+  margin-left: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/**
+* Scrolling CSS
+*/
+nav.scroll {
+  padding: 20px;
+  background: white;
+  position: fixed;
+}
+
+nav.scroll span {
+  font-size: 20px;
+  color: black;
+}
+
+nav.scroll li {
+  color: black;
+}
+
+img.cara
+{
+  height:500px
+}
+img.prdts
+{
+
+  height:300px;
+  width:230px;
+  transform: rotateZ(30deg);
+   
+  transition: all ease 1s;
+  margin:5px white
+}
+img.prdts:hover
+{
+  height:330px;
+  width:250px;
+ 
+  transform: skewX(180deg);
+  box-shadow: 0px 0px 10px 10px rgba(152, 124, 183, 0.7);
+}
+
+
+.container
+{
+  width:800px
+}
+
+
+
+.featured {
+  background-color: antiquewhite;
+  
+}
+
+
+
+.r1
+{
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+  overflow-x:visible ;
+  
+   
+}
+.iw
+{
+  padding:30px;
+  width :500px
+   
+}
+
+.fp:hover{
+
+  box-shadow: 10px 10px 20px 20px rgba(84, 106, 170, 0.2);
+  
+}
+
+
+img.h {
+  position: absolute;
+  
+  width: 150px;
+  border-radius: 100%;
+
+}
+svg {
+  position: absolute;
+  
+  width: 174px;
+  height: 274px;
+}
+path {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 40;
+  animation: dash 1s linear forwards;
+  
+  animation-iteration-count: infinite;
+ 
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.part 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* Sticky footer position and size
+-------------------------------------------------- */
+
+
+.footer {
+  
+  
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 300px;
+}
+
+/* Taller footer on small screens */
+@media (max-width: 567em) {
+   
+    .footer {
+      height: 300px;
+    }
+}
+
+
+footer {
+  padding-top: 30px;
+  background-color: #292c2f;
+  color: #bbb;
+}
+
+footer a {
+  color: #999;
+  text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+  color: #aaa;
+  text-decoration:none;
+  border-bottom:1px dotted #999;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
